@@ -1,5 +1,11 @@
 <div class="text-center">
   {{post-tile post=model}}
 
-  <button {{action 'addComment' comment}}></button>
+  {{new-comment post=model saveComment2="saveComment3"}}
+
+  {{#each model.comments as |comment|}}
+
+    {{display-comment comment=comment}}
+
+  {{/each}}
 </div>
