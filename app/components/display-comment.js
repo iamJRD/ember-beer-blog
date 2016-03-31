@@ -7,10 +7,9 @@ export default Ember.Component.extend({
 
   actions: {
     deleteComment(comment){
-      comment.destroyRecord();
       this.sendAction('deleteComment', comment);
-      this.transitionTo('index');
     },
+
     updateComment(comment, params){
       Object.keys(params).forEach(function(key){
         if(params[key] !== undefined){

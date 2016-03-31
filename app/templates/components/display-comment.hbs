@@ -1,6 +1,6 @@
 <h3>{{comment.title}}</h3>
-<h5>{{comment.author}}</h5>
+<h5>-{{comment.author}}</h5>
 <p>{{comment.body}}</p>
 
-<button {{action 'deleteComment' comment}}>Delete Comment</button>
+<button {{action 'deleteComment' comment}} class="btn btn-danger">Delete Comment</button>
 {{update-comment comment=comment updateComment="updateComment"}}
