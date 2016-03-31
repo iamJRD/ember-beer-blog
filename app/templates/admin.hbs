@@ -1,5 +1,9 @@
 <h1>Create, Edit or Delete Posts</h1>
 
+{{new-post save2="save3"}}
+
 {{#each model as |post|}}
   {{update-post post=post update="update"}}
+
+  <button {{action 'destroyPost' post}} class="btn btn-danger" name="delete">Delete</button>
 {{/each}}
