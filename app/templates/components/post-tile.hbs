@@ -1,1 +1,6 @@
-{{yield}}
+{{#link-to 'post' post.id}}
+  <h1>{{post.title}}</h1>
+{{/link-to}}
+  <h6>By: {{post.author}}</h6>
+  <br>
+  {{post-detail post=post}}

@@ -5,9 +5,6 @@
 
   <h2>Beer Posts:</h2>
       {{#each model as |post|}}
-        <h1>{{post.title}}</h1>
-        <h6>By: {{post.author}}</h6>
-        <br>
-        {{post-detail post=post}}
+        {{post-tile post=post}}
       {{/each}}
 </div>
