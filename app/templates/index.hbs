@@ -3,5 +3,10 @@
 
   <h3>Come and enjoy reading and talking about the wonderful beverage of beer with us and fellow beer enthusiasts.</h3>
 
-  <h4>Site content coming very, very, very soon! Have a beer, wait a second...</h4>
+  <h2>Beer Posts:</h2>
+      {{#each model as |post|}}
+        <h3>{{post.title}}</h3>
+        <h5>{{post.author}}</h5>
+        <p>{{post.body}}</p>
+      {{/each}}
 </div>

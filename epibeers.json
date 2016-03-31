@@ -1,0 +1,18 @@
+{ "posts": [{
+      "title": "Rogue Brewery",
+      "body": "Opening in 1988, Rogue Brewery is located on the coast of Oregon in the town of Newport. They are best known for their American Amber Ale which won silver and gold in the 2014 and 2015 World Beer Championships, respectively. Rogue Brewing is also known for partnering with the Portland local hot-spot, Voodoo Doughnuts to brew a line of beers inspired by their famous doughnuts.",
+      "author": "Jared Beckler",
+      "image": "http://beerstreetjournal.com/wp-content/uploads/Rogue-Brewing-Nation.jpg"
+    }, {
+      "title": "Stone Ruinination Double IPA 2.0",
+      "body": "Stone Ruination IPA was the first full-time brewed and bottled West Coast double IPA on the planet. As craft beer has evolved over the years, so too have techniques for maximizing hop flavors and aromas. For the second incarnation of our groundbreaking India pale ale, we employed dry hopping and hop bursting to squeeze every last drop of piney, citrusy, tropical essence from the hops that give this beer its incredible character. We’ve also updated the name to Stone Ruination Double IPA 2.0 to reflect the imperial-level intensity that’s evident in every sip. Join us in cheering this, the second stanza in our “Liquid Poem to the Glory of the Hop.”",
+      "author": "Yvonna Contreras",
+      "image": "https://i.ytimg.com/vi/J8M3UfPvYqk/maxresdefault.jpg"
+    }, {
+      "title": "OBF: Pump Up the Jam",
+      "body": "Boulder Beer Co.'s Pump Up the Jam perfectly captured the essence of fat, juicy, summer-ripe blueberries. This unfiltered, opaque wheat beer's strong fruity scent led to a sweet burst of blueberry flavor, with nice tartness in the background. On a typically hot day during the Oregon Brewers Festival, Pump Up the Jam became doubly refreshing. This one was made just for the festival, so if you want to get your hands on some, you’ll have to head to Colorado to see if the brewers have any left over!",
+      "author": "Yvonna Contreras & Jared Beckler",
+      "image": "http://drinks.seriouseats.com/images/2013/07/20130728-260939-4-obf-boulder-pump-up-jam.jpg"
+
+      }]
+}
