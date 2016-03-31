@@ -3,10 +3,15 @@
 {{new-post save2="save3"}}
 
 {{#each model as |post|}}
-<h3>{{post.title}}</h3>
+  {{post-tile post=post}}
 
-<div class="edit">
-  {{update-post post=post update="update"}}
-  <button {{action 'destroyPost' post}} class="btn btn-danger" name="delete">Delete</button>
-</div>
+  <div class="row" id="adminButtons">
+    <div class="col-sm-6 text-center">
+      {{update-post post=post update="update"}}
+    </div>
+
+    <div class="col-sm-6 text-center">
+      <button {{action 'destroyPost' post}} class="btn btn-danger" name="delete">Delete</button>
+    </div>
+  </div>
 {{/each}}

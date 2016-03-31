@@ -1,6 +1,17 @@
-{{#link-to 'post' post.id}}
-  <h1>{{post.title}}</h1>
-{{/link-to}}
-  <h6>By: {{post.author}}</h6>
+<div class="text-center">
+  {{#link-to 'post' post.id}}
+    <h1>{{post.title}}</h1>
+  {{/link-to}}
+    <h6>By: {{post.author}}</h6>
+    <br>
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="photos" src={{post.image}}>
+      </div>
+      <div class="col-lg-6">
+        <h4>{{post.body}}</h4>
+      </div>
+    </div>
+</div>
   <br>
-  {{post-detail post=post}}
+  {{post.comments.title}}
