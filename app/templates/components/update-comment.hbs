@@ -1,0 +1,25 @@
+{{#if updateCommentForm}}
+  <h1>Update Comment</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="title">Title: </label>
+        {{input class="textbox" value=title id="title" placeholder=comment.title}}
+      </div>
+
+      <div class="form-group">
+        <label for="author">Author: </label>
+        {{input class="textbox" value=author id="author" placeholder=comment.author}}
+      </div>
+
+      <div class="form-group">
+        <label for="body">Comment Body: </label>
+        {{textarea rows="10" cols="100" class="textboxBody" value=body id="body" placeholder=comment.body}}
+      </div>
+
+      <button class="btn btn-primary" {{action 'updateComment' comment}}>Update Comment</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'updateCommentForm'}} class="btn btn-primary">Update Comment</button>
+{{/if}}
