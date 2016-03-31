@@ -3,7 +3,10 @@
 {{new-post save2="save3"}}
 
 {{#each model as |post|}}
-  {{update-post post=post update="update"}}
+<h3>{{post.title}}</h3>
 
+<div class="edit">
+  {{update-post post=post update="update"}}
   <button {{action 'destroyPost' post}} class="btn btn-danger" name="delete">Delete</button>
+</div>
 {{/each}}
