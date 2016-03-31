@@ -23,8 +23,13 @@ export default Ember.Route.extend({
     },
 
     destroyPost(post) {
-      post.destroyRecord();
-      this.transitionTo('admin');
+      var comment_deletions = post.get('comments').map(function(comment) {
+        return comment.destroyRecord();
+      });
+      Ember.RSVP.all(comment_deletions).then(function() {
+        return post.destroyRecord();
+      });
+      this.transitionTo('index');
     }
   }
 });
